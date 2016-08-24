@@ -17,9 +17,18 @@ function draw() {
 
 function Ball() {
   this.diameter = 50;
+  this.prevXLoc = this.diameter/2.0;
+  this.prevYLoc = canvasHeight - this.diameter/2.0;
   this.xLoc = 0;
   this.yLoc = 0;
+  this.xSpeed = 1;
+  this.ySpeed = -1;
   this.display = function () {
+    this.moveBall();
     ellipse(this.xLoc, this.yLoc, this.diameter, this.diameter);
+  }
+  this.moveBall = function () {
+    this.xLoc = this.prevXLoc;
+    this.yLoc = this.prevYLoc;
   }
 };
