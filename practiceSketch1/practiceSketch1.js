@@ -13,6 +13,15 @@ function draw() {
   createBall(mouseX, mouseY);
 }
 
+function Ball() {
+  this.diameter = 50;
+  this.x = 50;
+  this.y = 50;
+  this.display = function () {
+    ellipse(this.x, this.y, this.diameter, this.diameter);
+  }
+}
+
 function createBall(xLoc, yLoc) {
   ellipse(xLoc, yLoc, 50, 50);
 }
