@@ -1,4 +1,6 @@
 var ballA;
+var paddleA;
+var paddleB;
 var canvasWidth = 640;
 var canvasHeight = 360;
 var paddleDistanceFromSide = 60;
