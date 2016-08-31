@@ -71,8 +71,8 @@ function Ball() {
   this.prevYLoc = canvasHeight - this.diameter/2.0;
   this.xLoc = 0;
   this.yLoc = 0;
-  this.xSpeed = 1;
-  this.ySpeed = -1;
+  this.xSpeed = 2;
+  this.ySpeed = -2;
   this.display = function () {
     this.moveBall();
     ellipse(this.xLoc, this.yLoc, this.diameter, this.diameter);
@@ -96,7 +96,24 @@ function Ball() {
     {
         this.ySpeed = -this.ySpeed;
     }
+    this.collideWithPaddles();
     this.xLoc = this.prevXLoc + this.xSpeed;
     this.yLoc = this.prevYLoc + this.ySpeed;
+  }
+  this.collideWithPaddles = function() {
+    if((this.yLoc > paddleA.yPos - paddleA.height/2.0) && (this.yLoc < paddleA.yPos + paddleA.height/2.0))
+    {       
+        if(this.xLoc - this.diameter/2.0 < paddleA.xPos + paddleA.width/2.0)
+        {
+            this.xSpeed = abs(this.xSpeed);
+        }
+    }
+    if((this.yLoc > paddleB.yPos - paddleB.height/2.0) && (this.yLoc < paddleB.yPos + paddleB.height/2.0))
+    {
+        if(this.xLoc + this.diameter/2.0 > paddleB.xPos - paddleB.width/2.0)
+        {
+            this.xSpeed = -abs(this.xSpeed);
+        }
+    }
   }
 };
