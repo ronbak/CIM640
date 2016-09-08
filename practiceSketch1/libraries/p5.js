@@ -10035,7 +10035,7 @@ p5.prototype.windowHeight = document.documentElement.clientHeight;
 /**
  * The windowResized() function is called once every time the browser window
  * is resized. This is a good place to resize the canvas or do any other
- * adjustements to accomodate the new window size.
+ * adjustements to accommodate the new window size.
  *
  * @method windowResized
  * @example
