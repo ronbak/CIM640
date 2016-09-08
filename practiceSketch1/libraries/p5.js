@@ -14981,7 +14981,7 @@ p5.prototype.rotationZ = 0;
  * var rotateDirection = 'clockwise';
  *
  * // Simple range conversion to make things simpler.
- * // This is not absolutely neccessary but the logic
+ * // This is not absolutely necessary but the logic
  * // will be different in that case.
  *
  * var rX = rotationX + 180;
@@ -15019,7 +15019,7 @@ p5.prototype.pRotationX = 0;
  * var rotateDirection = 'clockwise';
  *
  * // Simple range conversion to make things simpler.
- * // This is not absolutely neccessary but the logic
+ * // This is not absolutely necessary but the logic
  * // will be different in that case.
  *
  * var rY = rotationY + 180;
