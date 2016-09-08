@@ -10548,7 +10548,7 @@ function friendlyWelcome() {
 }
 
 /**
- * Prints out all the colors in the color pallete with white text.
+ * Prints out all the colors in the color palette with white text.
  * For color blindness testing.
  */
 /* function testColors() {
