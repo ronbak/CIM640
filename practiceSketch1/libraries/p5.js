@@ -19631,7 +19631,7 @@ p5.prototype.loadStrings = function (path, callback, errorCallback) {
  * </p>
  *
  * <p>When passing in multiple options, pass them in as separate parameters,
- * seperated by commas. For example:
+ * separated by commas. For example:
  * <br><br>
  * <code>
  *   loadTable("my_csv_file.csv", "csv", "header")
